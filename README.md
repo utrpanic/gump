@@ -1,2 +1,4 @@
-# gump
-Black Alert! Jump to the Git Branch
+# Gump
+Black Alert! Jump to the Git Branch!
+And THEN!
+
