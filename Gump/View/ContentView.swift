@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var selectedLocalRepo: LocalRepo?
+    @State private var selectedLocalRepo: LocalRepo? = .brunch
     
     var body: some View {
         NavigationView {

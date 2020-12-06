@@ -11,6 +11,8 @@
 		605667BD257C786200D438BB /* LocalRepoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605667BC257C786200D438BB /* LocalRepoList.swift */; };
 		605667C0257C78B000D438BB /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605667BF257C78B000D438BB /* UserData.swift */; };
 		605667C4257C7C2800D438BB /* NavigationDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605667C3257C7C2800D438BB /* NavigationDetail.swift */; };
+		605667D2257C876000D438BB /* BranchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605667D1257C876000D438BB /* BranchList.swift */; };
+		605667DB257CAC7E00D438BB /* ShellService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605667DA257CAC7E00D438BB /* ShellService.swift */; };
 		8DF5CA9C2571E4FB009AFE11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF5CA9B2571E4FB009AFE11 /* AppDelegate.swift */; };
 		8DF5CA9E2571E4FB009AFE11 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF5CA9D2571E4FB009AFE11 /* ContentView.swift */; };
 		8DF5CAA02571E4FB009AFE11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DF5CA9F2571E4FB009AFE11 /* Assets.xcassets */; };
@@ -18,7 +20,6 @@
 		8DF5CAA62571E4FB009AFE11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DF5CAA42571E4FB009AFE11 /* Main.storyboard */; };
 		8DF5CAB62571E67B009AFE11 /* Branch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF5CAB52571E67B009AFE11 /* Branch.swift */; };
 		8DF5CABA2571E684009AFE11 /* LocalRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF5CAB92571E684009AFE11 /* LocalRepo.swift */; };
-		8DF5CAC32571E6E3009AFE11 /* GitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF5CAC22571E6E3009AFE11 /* GitService.swift */; };
 		8DF5CAC62571E71C009AFE11 /* ReposViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF5CAC52571E71C009AFE11 /* ReposViewModel.swift */; };
 		8DF5CAC92571E758009AFE11 /* BranchesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF5CAC82571E758009AFE11 /* BranchesViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,8 @@
 		605667BC257C786200D438BB /* LocalRepoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRepoList.swift; sourceTree = "<group>"; };
 		605667BF257C78B000D438BB /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		605667C3257C7C2800D438BB /* NavigationDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDetail.swift; sourceTree = "<group>"; };
+		605667D1257C876000D438BB /* BranchList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchList.swift; sourceTree = "<group>"; };
+		605667DA257CAC7E00D438BB /* ShellService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellService.swift; sourceTree = "<group>"; };
 		8DF5CA982571E4FB009AFE11 /* Gump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gump.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DF5CA9B2571E4FB009AFE11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DF5CA9D2571E4FB009AFE11 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,7 +41,6 @@
 		8DF5CAA82571E4FB009AFE11 /* Gump.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Gump.entitlements; sourceTree = "<group>"; };
 		8DF5CAB52571E67B009AFE11 /* Branch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Branch.swift; sourceTree = "<group>"; };
 		8DF5CAB92571E684009AFE11 /* LocalRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRepo.swift; sourceTree = "<group>"; };
-		8DF5CAC22571E6E3009AFE11 /* GitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitService.swift; sourceTree = "<group>"; };
 		8DF5CAC52571E71C009AFE11 /* ReposViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposViewModel.swift; sourceTree = "<group>"; };
 		8DF5CAC82571E758009AFE11 /* BranchesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,7 +119,7 @@
 		8DF5CABD2571E698009AFE11 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				8DF5CAC22571E6E3009AFE11 /* GitService.swift */,
+				605667DA257CAC7E00D438BB /* ShellService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -129,6 +131,7 @@
 				605667B9257C781B00D438BB /* NavigationPrimary.swift */,
 				605667C3257C7C2800D438BB /* NavigationDetail.swift */,
 				605667BC257C786200D438BB /* LocalRepoList.swift */,
+				605667D1257C876000D438BB /* BranchList.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -203,7 +206,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				605667DB257CAC7E00D438BB /* ShellService.swift in Sources */,
 				8DF5CAC62571E71C009AFE11 /* ReposViewModel.swift in Sources */,
+				605667D2257C876000D438BB /* BranchList.swift in Sources */,
 				8DF5CA9E2571E4FB009AFE11 /* ContentView.swift in Sources */,
 				8DF5CAB62571E67B009AFE11 /* Branch.swift in Sources */,
 				605667C4257C7C2800D438BB /* NavigationDetail.swift in Sources */,
@@ -212,7 +217,6 @@
 				605667C0257C78B000D438BB /* UserData.swift in Sources */,
 				605667BD257C786200D438BB /* LocalRepoList.swift in Sources */,
 				8DF5CA9C2571E4FB009AFE11 /* AppDelegate.swift in Sources */,
-				8DF5CAC32571E6E3009AFE11 /* GitService.swift in Sources */,
 				8DF5CABA2571E684009AFE11 /* LocalRepo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

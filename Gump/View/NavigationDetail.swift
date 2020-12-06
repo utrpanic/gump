@@ -11,7 +11,12 @@ struct NavigationDetail: View {
     }
     
     var body: some View {
-        Text("브랜치들")
+        VStack {
+            Text("Black Alert")
+                .font(.title)
+            BranchList(viewModel: BranchesViewModel(localRepo: self.localRepo))
+        }
+        .background(Color.white)
     }
 }
 

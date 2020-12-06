@@ -9,7 +9,7 @@ struct LocalRepoList: View {
         List(selection: $selectedLocalRepo) {
             ForEach(userData.localRepos, id: \.name) { localRepo in
                 Text("\(localRepo.name)")
-                    .font(.title)
+                    .font(.headline)
                     .tag(localRepo)
             }
         }
