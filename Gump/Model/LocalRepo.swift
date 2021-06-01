@@ -1,10 +1,9 @@
 
 enum LocalRepo: String, CaseIterable {
     
-    case brunch = "ro-brunc-ios"
+    case brunch = "ro-brunch-ios"
     case tistory = "ro-tistory-ios"
     
-    var path: String {
-        return "~/Development/projects/" + self.rawValue
-    }
+    var name: String { self.rawValue }
+    var path: String { "/Users/box-jeon/Development/projects/" + self.name }
 }
